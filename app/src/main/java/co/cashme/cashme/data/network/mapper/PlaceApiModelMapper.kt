@@ -4,6 +4,7 @@ import co.cashme.cashme.data.network.model.ExchangePointApiModel
 import co.cashme.cashme.domain.model.Currency
 import co.cashme.cashme.domain.model.ExchangePoint
 import co.cashme.cashme.domain.model.Rate
+import java.util.*
 import javax.inject.Inject
 
 class PlaceApiModelMapper @Inject constructor() {
@@ -35,6 +36,7 @@ class PlaceApiModelMapper @Inject constructor() {
 
                 with (pointRates.first()) {
                     ExchangePoint(
+                        id = UUID.randomUUID().toString(),
                         city = city,
                         address = address,
                         name = name,

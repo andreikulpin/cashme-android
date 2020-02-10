@@ -1,5 +1,6 @@
 package co.cashme.cashme.presentation.base
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ import kotlinx.android.synthetic.main.fragment_map.*
 import toothpick.Toothpick
 
 internal open class BaseFragment(@LayoutRes layout: Int) : Fragment(layout) {
+    protected open val activityOrientation: Int = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     protected val scopeName = "${javaClass.simpleName}_${hashCode()}"
     protected open val parentScopeName =
         parentFragment?.castTo<BaseFragment>()?.scopeName
@@ -34,6 +36,7 @@ internal open class BaseFragment(@LayoutRes layout: Int) : Fragment(layout) {
 
     @CallSuper
     protected open fun initView() {
+        requireActivity().requestedOrientation = activityOrientation
         setupSystemUiVisibility()
         setupForInsets()
     }

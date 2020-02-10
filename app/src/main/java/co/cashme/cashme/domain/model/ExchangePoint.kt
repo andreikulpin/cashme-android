@@ -1,6 +1,7 @@
 package co.cashme.cashme.domain.model
 
 data class ExchangePoint(
+    val id: String,
     val city: Int,
     val address: String,
     val name: String,

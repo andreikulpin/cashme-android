@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">CashMe</string>
+
+    <string name="exchange_action_sell" >Sell</string>
+    <string name="exchange_action_buy" >Buy</string>
+
+    <string name="phone" >Phone: %s</string>
+    <string name="address" >Address: %s</string>
 </resources>

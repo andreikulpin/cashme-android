@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="exchange_action_buy">Покупка</string>
+    <string name="exchange_action_sell">Продажа</string>
+    <string name="address">Адрес: %s</string>
+    <string name="phone">Телефон: : %s</string>
 </resources>

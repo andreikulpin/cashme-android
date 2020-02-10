@@ -7,4 +7,7 @@
     <color name="black">#000</color>
 
     <color name="colorStatusBarTranslucent">#33000000</color>
+    <color name="colorProgressBackground">#77ffffff</color>
+
+    <color name="colorTextPrimary">@color/black</color>
 </resources>
